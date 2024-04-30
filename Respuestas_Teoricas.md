@@ -46,3 +46,31 @@ Los booleanos son un tipo de dato especial que solo puede tener dos valores: tru
 ## - Null y undefined:
 - `null` representa la ausencia intencional de un valor. Se utiliza cuando una variable no tiene ningún valor asignado o cuando queremos eliminar un valor existente. Y lo podemos usar para definirlo o reasignarlo nuevamente mas adelante en nuestro programa. 
 - `undefined` representa un valor no inicializado. Se asigna automáticamente a las variables que no han sido declaradas o inicializadas.
+*Ejemplos de uso:*
+ + Inicializar una variable sin valor: `var nombreUsuario = null;`
+ + Verificar si una variable ha sido declarada: `if (typeof variable === "undefined") { ... }`
+![null](https://github.com/DanielDA95/CheckPoint_7/assets/126833141/d9cb2a0b-0e72-4b29-81a9-81ca445a6d78)
+
+## - Objetos:
+Los objetos son el tipo de dato más versátil en JavaScript. Permiten almacenar colecciones de datos interrelacionados, organizados en pares de ***clave-valor*** (key-value). Son ideales para representar información compleja, como información de usuarios, productos o configuraciones, podriamos decir que es la estructura y tipo de datos más complejos en JS. Veamos los siguientes ejemplos:
+
+-	*Almacenar datos de un usuario:*
+`var usuario = {
+  nombre: "Daniel",
+  edad: 29,
+  correo: "daniel@email.com"
+};`
+-	*Representar un producto:*
+
+`var producto = {
+  id: 1234,
+  nombre: "Camiseta negra",
+  precio: 25.99,
+  categoria: "Ropa"
+};`
+
+## - **symbol:** 
+Los símbolos son un tipo de dato *especial* introducido en ES6. Se utilizan para crear identificadores únicos que no pueden ser redefinidos o chocar con otros nombres de variables o propiedades. Son útiles para crear claves privadas en objetos o implementar patrones de diseño avanzados.
+
+*Ejemplo:*
+![Captura de pantalla 2024-04-30 150134](https://github.com/DanielDA95/CheckPoint_7/assets/126833141/c3265bf7-5b7b-4b73-b932-8463174d0ea8)
