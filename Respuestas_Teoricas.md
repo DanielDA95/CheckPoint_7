@@ -16,4 +16,33 @@ Desde su lanzamiento en junio de 1997 con el estándar ECMAScript 1, han surgido
 - **Orientación a objetos:** Imaginemos que tienemos una caja de herramientas con diferentes tipos de herramientas: martillos, destornilladores, llaves inglesas, etc. Cada herramienta tiene una función específica. JavaScript es como esa caja de herramientas. Es un lenguaje orientado a objetos, lo que significa que podemos agrupar funciones y datos relacionados en objetos. Por ejemplo, si queremos representar un coche, podemos crear un objeto llamado “Coche” con propiedades como “color”, “modelo” y “velocidad”. Esto nos ayuda a organizar nuestro código y reutilizarlo fácilmente para crear nuestro programa como lo necesitamos.
 - En conclusión:
   ***Javascript:*** Se utiliza principalmente para crear interacciones dinámicas en páginas web. Se ejecuta en el navegador del usuario, lo que le permite controlar elementos HTML, responder a eventos de usuario y realizar solicitudes a servidores web.
-  ***Otros lenguajes:*** Se pueden utilizar para una amplia gama de tareas, incluyendo el desarrollo de aplicaciones web y móviles, back-end, análisis de datos, inteligencia artificial y mucho más.
+  ***Otros lenguajes:*** Se pueden utilizar para una amplia gama de tareas, incluyendo el desarrollo de aplicaciones web y móviles, back-end, análisis de datos, inteligencia artificial y mucho más. En resumen, Javascript es un lenguaje de programación versátil y potente que se ha convertido en una herramienta esencial para el desarrollo web moderno. Si bien comparte algunas similitudes con otros lenguajes de programación, también tiene sus propias características únicas que lo hacen ideal para crear experiencias web interactivas y dinámicas.
+  
+# 2. ¿Cuáles son algunos tipos de datos JS?
+Los tipos de datos en JavaScript, son los bloques de construcción básicos para almacenar y manipular información en nuestros programas.
+Imaginemos que estamos construyendo una casa. Para construirla, necesitamos diferentes materiales como ladrillos, cemento, madera y vidrio. De la misma manera, en JavaScript, utilizamos distintos tipos de datos para representar diferentes tipos de información para edificar o construir nuestro programa. Los tipos de datos que podamos encontrar son:
+## - Numeros:
+Los números son el tipo de dato más básico en JavaScript. Permiten almacenar y operar con valores numéricos, son perfectos para contar, calcular y realizar operaciones matemáticas básicas o complejas utilizando los operadores aritméticos que todos conocemos. Ademas podemos usar tipos de numeros tales como, los ***Enteros*** y ***Decimales***.
+
+*Ejemplo:*
+ - Calcular el total de una compra: `var total = 10.50 + 7.25 + 5.30;`
+ - Obtener el promedio de calificaciones: `var promedio = (8 + 9 + 10) / 3;`
+ - Calcular el área de un rectángulo: `var area = base * altura;`
+
+## - Cadenas de texto ó "strings":
+Las cadenas de caracteres, también conocidas como strings en JavaScript, son secuencias de caracteres que se utilizan para representar texto en programas, son el tipo de dato que nos permite almacenar y manipular texto. Son ideales para mostrar información al usuario, crear mensajes dinámicos y almacenar datos textuales.
+
+*Ejemplo de uso:*
+![Captura de pantalla 2024-04-30 104849](https://github.com/DanielDA95/CheckPoint_7/assets/126833141/868a97fa-d3a5-4d3e-8ce0-eb61c40b1362)
+
+## - Booleanos:
+Los booleanos son un tipo de dato especial que solo puede tener dos valores: true o false. Son útiles para representar condiciones, tomar decisiones y controlar el flujo de nuestros programas, por lo anterior expuesto, las unicas decisiones que tomamos se reducen a 'Verdadero' o 'Falso', haciendo que sea un poco mas fácil al momento de programar y que condicionado a estas respuestas lo que tengamos que solucionar tenga ese proposito de responder a una pregunta cerrada. 
+
+*Ejemplo*
+ - Verificar si un usuario es mayor de edad: `var esMayor = edad >= 18; `
+ - Comprobar si un archivo está cargado: `var archivoCargado = true;`
+ - Determinar si un número es par: `var esPar = numero % 2 === 0;`
+
+## - Null y undefined:
+- `null` representa la ausencia intencional de un valor. Se utiliza cuando una variable no tiene ningún valor asignado o cuando queremos eliminar un valor existente. Y lo podemos usar para definirlo o reasignarlo nuevamente mas adelante en nuestro programa. 
+- `undefined` representa un valor no inicializado. Se asigna automáticamente a las variables que no han sido declaradas o inicializadas.
