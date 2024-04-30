@@ -156,3 +156,19 @@ Cuando se quiere definir una función con un nombre descriptivo.
 - Cuando se quiere evitar la creación de variables innecesarias (al usar const).
 
 En general, las expresiones de función son más concisas y modernas, mientras que las declaraciones de función son más claras y explícitas. La elección entre una y otra depende del contexto y las preferencias de cada persona que este realizando el programa. En resumen, las declaraciones de función se definen con la palabra clave function, mientras que las expresiones de función se crean mediante asignación de variables.
+
+# 7. Qué es la palabra clave "this" en JS?
+En JavaScript, la palabra clave this es una referencia especial que se refiere al objeto actual en el que se está ejecutando el código. El valor de this cambia dependiendo del contexto en el que se use. En JavaScript, la palabra clave this funciona como un megáfono que te permite dirigirte a un objeto específico dentro de tu código. Veamos un 'ejemplo' que podriamos aplicar en la vida real, y digamos que nos encontramos en medio de una multitud de personas y necesitamos encontrar a alguien en especifico, ahí es cuando la palabra 'this' actuaria como un megáfono, con el que llamaremos la atención de esta persona. 
+
+*Ejemplo*
+`const perro = {
+  nombre: "Toby",
+  ladrar: function() {
+    console.log("¡Guau! Soy", this.nombre); // "this.nombre" hace referencia al nombre del perro, "Toby"
+  }
+};`
+
+`perro.ladrar(); // Imprime "¡Guau! Soy Toby"`
+
+En resumen:
+"this" es una herramienta esencial en JavaScript para interactuar con objetos y controlar el contexto de ejecución. Su valor cambia dependiendo de dónde te encuentres en tu código. Puedes usar "this" para acceder a propiedades y métodos de objetos, crear nuevos objetos y cambiar el contexto de funciones.
