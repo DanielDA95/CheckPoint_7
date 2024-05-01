@@ -295,3 +295,63 @@ En JavaScript, la palabra clave this es una referencia especial que se refiere a
 
 En resumen:
 "this" es una herramienta esencial en JavaScript para interactuar con objetos y controlar el contexto de ejecución. Su valor cambia dependiendo de dónde te encuentres en tu código. Puedes usar "this" para acceder a propiedades y métodos de objetos, crear nuevos objetos y cambiar el contexto de funciones.
+
+***Desvelando el misterio de "this"***
+La palabra clave "this" en JavaScript es un concepto fundamental que representa el objeto actual en el que se ejecuta el código.
+*Puntos clave:*
+- El valor de "this" cambia dinámicamente según el contexto en que se utiliza.
+- No debe confundirse con una variable, ya que su valor no se puede asignar directamente.
+- Es esencial para comprender el funcionamiento de métodos, funciones constructoras y eventos en JavaScript.
+
+* Explorando los diferentes contextos de "this"
+El valor de "this" varía dependiendo de cómo se invoque la función o el método donde se utiliza.
+Casos de uso comunes:
+
+En métodos de objetos: Dentro de un método, "this" se refiere al objeto en el que se llama al método.
+
+`class Persona {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }`
+
+  `saludar() {
+    console.log(``Hola, mi nombre es ${this.nombre}``); // "this" se refiere al objeto "Persona"
+  }
+}`
+
+`const persona1 = new Persona("Juan");`
+`persona1.saludar(); // Imprime "Hola, mi nombre es Juan"`
+
+* En funciones constructoras: Dentro de una función constructora, "this" se refiere al nuevo objeto que se está creando.
+
+`function Coche(marca, modelo) {
+  this.marca = marca;
+  this.modelo = modelo;`
+
+  `this.arrancar = function() {
+    console.log(``${this.marca} ${this.modelo} está arrancando``)``; // "this" se refiere al nuevo objeto "Coche"
+ ` };
+}`
+
+`const coche1 = new Coche("Ford", "Mustang");
+coche1.arrancar(); // Imprime "Ford Mustang está arrancando"`
+
++ En eventos: Dentro de un manejador de eventos, "this" se refiere al elemento que desencadena el evento.
+
+`const boton = document.getElementById("miBoton");`
+
+`boton.addEventListener("click", function() {
+  console.log(this.textContent); // "this" se refiere al elemento "boton"
+});`
+
+`boton.click(); // Imprime "Click"`
+
+
++ En funciones anónimas y arrow functions: El comportamiento de "this" en estas funciones depende de cómo se hayan creado:
+Funciones anónimas: "this" se refiere al objeto global (window).
+Arrow functions: "this" hereda el valor de "this" del entorno donde se define.
+
+*Puntos clave:*
+- Es crucial comprender el contexto de "this" para acceder a las propiedades y métodos del objeto correcto.
+- El comportamiento de "this" puede variar en diferentes situaciones.
+- Las arrow functions simplifican el manejo de "this" en algunos casos.
