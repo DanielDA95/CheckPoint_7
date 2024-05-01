@@ -80,6 +80,51 @@ JavaScript trata las cadenas como objetos al ejecutar métodos y propiedades; Es
 + length: Esta función te permite verificar la longitud de una cadena. Por ejemplo, si tienes la cadena "Hola, mundo", puedes obtener su longitud con cadena.length, que devolverá el valor 11.
 + concatenación: Puedes unir dos o más cadenas utilizando el operador + o el operador +=. Por ejemplo, si tienes dos cadenas "Hola" y "mundo", puedes concatenarlas así: const resultado = cadena1 + " " + cadena2;
 + indexOf(): Esta función te permite encontrar la posición de una subcadena dentro de una cadena más grande. Por ejemplo, si tienes la cadena "JavaScript es genial", puedes usar cadena.indexOf("genial") para obtener la posición del texto "genial" en la cadena original.
++ Recortando con precisión: slice() y substr()
+Las funciones slice() y substr() permiten extraer una porción de una cadena de texto, especificando el inicio y el final del segmento deseado.
+	Sintaxis:
+	- slice(): 
+	`let subcadena = cadena.slice(inicio, fin);`
+	- substr(): 
+	`let subcadena = cadena.substr(inicio, longitud);`
+	
+	Ejemplo:
+	`let frase = "Hola, mundo!";
+	let saludo = frase.slice(0, 5); // Extrae "Hola"
+	console.log(saludo); // Imprime "Hola"
+	let mundo = frase.substr(6, 5); // Extrae "mundo"
+	console.log(mundo); // Imprime "mundo"`
+	
+	Puntos clave:
+	- slice() extrae desde el inicio hasta el final (exclusivo) indicado.
+	- substr() extrae desde el inicio y la longitud especificada.
+	- Ambas funciones son útiles para recortar cadenas de diferentes maneras.
+
++ Transformando mayúsculas y minúsculas: toLowerCase() y toUpperCase()
+Las funciones toLowerCase() y toUpperCase() permiten convertir una cadena de texto a minúsculas o mayúsculas, respectivamente.
+
+	Sintaxis:
+	`let cadenaMinuscula = cadena.toLowerCase();`
+	`let cadenaMayuscula = cadena.toUpperCase();`
+	
+	Ejemplo:
+	`let titulo = "JavaScript: Fundamentos";
+	let tituloMinuscula = titulo.toLowerCase();
+	console.log(tituloMinuscula); // Imprime "javascript: fundamentos"
+	let tituloMayuscula = titulo.toUpperCase();
+	console.log(tituloMayuscula); // Imprime "JAVASCRIPT: FUNDAMENTOS"`
+	
+	Puntos clave:
+	- Estas funciones son útiles para convertir cadenas a un formato específico.
+	- Se pueden combinar con otras funciones de string para crear transformaciones más complejas.
+	- Son importantes para la manipulación de texto en diferentes contextos.
+
++ Reemplazando texto con replace()
+	La función replace() permite reemplazar un texto específico dentro de una cadena por otro texto.
+	Sintaxis:
+	
+	`let nuevaCadena = cadena.replace(textoABuscar, textoReemplazo);`
+
 
 # 4. ¿Que es un condicional en JS?
 En JavaScript, los condicionales son estructuras de control del flujo del programa que permiten ejecutar diferentes bloques de código dependiendo de una condición específica. La condición se evalúa como verdadera o falsa, y el flujo del programa se dirige en consecuencia, es una estructura que permite ejecutar diferentes bloques de código según si se cumple o no una condición. Es como tomar decisiones en función de ciertas circunstancias. Para esto vamos el siguiente ejemplo y los tipos de condicional:
