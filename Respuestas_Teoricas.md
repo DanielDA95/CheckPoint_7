@@ -95,6 +95,84 @@ En JavaScript, los condicionales son estructuras de control del flujo del progra
 En pocas palabras, esta condición, nos indicaría si al tener 18 años o más, eres mayor de edad la mayoria de paises. 
 Los condicionales son fundamentales para la programación en JavaScript, ya que permiten tomar decisiones y ejecutar diferentes acciones en función de las condiciones que se cumplan. Son utilizados en una amplia variedad de escenarios, como validar datos de usuario, controlar el flujo de una aplicación, mostrar diferentes interfaces de usuario, etc.
 
+La instrucción if...else es la base de las decisiones en JavaScript. Permite ejecutar un bloque de código si se cumple una condición específica, y otro bloque si no se cumple.
+Sintaxis:
+`if (condicion) {
+  // Bloque de código si la condición es true
+} else {
+  // Bloque de código si la condición es false
+}`
+
+Puntos clave:
+- La condición debe ser una expresión booleana que resulte en true o false.
+- Los bloques de código pueden contener múltiples instrucciones, incluso otras sentencias if...else.
+- La cláusula else es opcional, pero se recomienda para manejar todos los casos posibles.
+
+* **Sentencias switch: dominando múltiples opciones**
+Las sentencias switch permiten evaluar una variable contra una serie de valores y ejecutar un bloque de código correspondiente a cada caso.
+
+Sintaxis:
+
+switch (variable) {
+  case valor1:
+    // Código para el caso 1
+    break;
+  case valor2:
+    // Código para el caso 2
+    break;
+  default:
+    // Código para el caso por defecto
+}
+
+Puntos clave:
+•	Útil para manejar múltiples opciones de manera organizada.
+•	Cada caso debe ir seguido de la instrucción break para evitar la ejecución accidental de código posterior.
+•	La cláusula default es opcional, pero se recomienda para manejar casos no contemplados.
+Operadores lógicos: dominando el lenguaje de la lógica (continuación)
+Los operadores lógicos permiten combinar y evaluar múltiples condiciones, controlando el flujo del programa con precisión.
+* **Operadores lógicos básicos:**
+-	*&& (And):* Evalúa si todas las condiciones son verdaderas. 
+-	Sintaxis: condicion1 && condicion2 && ...
+	Ejemplo: (edad >= 18) && (pais === "España") (Verifica si la persona es mayor de edad y reside en España).
+	|| (Or): Evalúa si al menos una condición es verdadera. 
+	Sintaxis: condicion1 || condicion2 || ...
+	Ejemplo: (edad >= 18) || (tienePermisoEspecial) (Verifica si la persona es mayor de edad o tiene un permiso especial).
+-	! (Not): Invierte el valor de una condición. 
+	Sintaxis: !condicion
+	Ejemplo: !esEstudiante (Verifica si la persona no es estudiante).
++ **Operadores lógicos avanzados:**
+-	&&= (Logical AND assignment): Asigna un valor a una variable solo si la condición es verdadera. 
+	Sintaxis: variable &&= valor
+	Ejemplo: mensaje &&= (edad >= 18) ? "Mayor de edad" : "Menor de edad" (Asigna el mensaje correspondiente según la edad).
+-	||= (Logical OR assignment): Asigna un valor a una variable si al menos una condición es verdadera. 
+	Sintaxis: variable ||= valor
+	Ejemplo: accesoPermitido ||= (esAdmin || tienePermiso) (Asigna true a accesoPermitido si la persona es administrador o tiene permiso).
+
++ **Consejos para usar operadores lógicos:**
+•	Agrupar condiciones con paréntesis: Para mayor claridad y evitar ambigüedades en la evaluación.
+•	Utilizar la precedencia de operadores: Conocer el orden de evaluación de los operadores para obtener el resultado esperado.
+•	Evitar negaciones innecesarias: Simplificar las expresiones utilizando operadores lógicos más directos.
+
+* **Evaluando condiciones con precisión**
+Evaluar correctamente las condiciones es crucial para el buen funcionamiento de los condicionales. A continuación, se presentan herramientas y técnicas para lograrlo:
+*Operadores de comparación:*
+-	== (Igualdad): Compara valores, sin considerar el tipo.
+-	=== (Igualdad estricta): Compara valores y tipos.
+-	!= (Desigualdad): Compara valores, sin considerar el tipo.
+-	!== (Desigualdad estricta): Compara valores y tipos.
+-	< (Menor que): Compara valores numéricos.
+-	> (Mayor que): Compara valores numéricos.
+-	<= (Menor o igual que): Compara valores numéricos.
+-	>= (Mayor o igual que): Compara valores numéricos.
+*Comprobación de tipos de datos:*
+-	typeof(variable): Obtiene el tipo de dato de una variable.
+-	instanceof: Verifica si una variable es instancia de un tipo de dato específico.
+-	variable === undefined: Verifica si una variable es undefined.
+*Consejos para evaluar condiciones:*
+-	Elegir el operador de comparación adecuado: Considerar el tipo de datos y la comparación deseada.
+-	Validar valores antes de compararlos: Evitar errores por valores nulos o indefinidos.
+-	Utilizar sentencias if anidadas para condiciones complejas: Desglosar condiciones extensas en bloques más manejables.
+
 # 5. ¿Qué es un operador ternario?
 El operador ternario en JavaScript es una herramienta poderosa y concisa para escribir declaraciones condicionales. A menudo se utiliza como un atajo para la instrucción if.
 Para dar un mejor entendimiento a este concepto voy a utilizar un ejemplo; 
